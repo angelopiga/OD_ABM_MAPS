@@ -1,0 +1,49 @@
+{
+  "scenario": [
+    "Degrowth"
+  ],
+  "seed": 123,
+  "n_simulations": 10,
+  "population_size": 3000,
+  "years": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030,
+    2031,
+    2032,
+    2033,
+    2034,
+    2035,
+    2036,
+    2037,
+    2038,
+    2039,
+    2040,
+    2041,
+    2042,
+    2043,
+    2044,
+    2045,
+    2046,
+    2047,
+    2048,
+    2049,
+    2050
+  ],
+  "alpha_init_strategy": "uniform",
+  "alpha_init_params": {
+    "a": 3.0,
+    "b": 1.5
+  },
+  "opinion_w_priv": 0.5,
+  "opinion_nu": 0.05,
+  "temperature_scenario": "SSP5-8.5",
+  "climate_event_rate": 0.5,
+  "network_avg_degree": 10
+}
