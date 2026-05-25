@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opinion-dynamics-abm"
+version = "0.1.0"
+description = "Behavioural agent-based model for opinion dynamics and voting outcomes."
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["agent-based-model", "opinion-dynamics", "networkx", "economics", "post-growth"]
+authors = [
+    {name = "Angelo Piga", email = "angelo.piga@gmail.com"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Life",
+]
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "networkx>=3.0",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
+    "pyarrow>=12.0",
+]
+
+[project.optional-dependencies]
+notebooks = [
+    "jupyterlab>=4.0",
+    "ipykernel>=6.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
